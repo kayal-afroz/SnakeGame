@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+    <script type="text/javascript" src="processing.js"></script>
+    <style>
+        #instructions {
+            display: inline-block;
+            margin-left: 10px;
+            vertical-align: top;
+            padding: 20px;
+            background-color: #AAAAAA;
+            color: white;
+            border-radius: 0px 10px;
+            box-shadow: 2px 2px 2px grey;
+        }
+
+        h1 {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sketch">
+        <h1>
+            Snake Game
+        </h1>
+
+        <div id="game-screen">
+            <canvas data-processing-sources="SnakeGame.pde"></canvas>
+            <div id="instructions">
+                Use arrow keys to move the snake
+                Eat food and grow
+            </div>
+        </div>
+    </div>
+</body>
+</html>
